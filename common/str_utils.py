@@ -1,7 +1,17 @@
 import unicodedata
 import re
 
-def replace_all(replacer, value):
+def replace_all(replacer: dict, value:str):
+    """
+    Replaces all occurrences of specified substrings in a string with their corresponding replacements.
+
+    Args:
+        replacer (dict): a dictionary where keys are the substrings to be replaced and values are their corresponding replacements.
+        value (str): the string in which the replacements are to be made.
+
+    Returns:
+        str: a new string where all occurrences of the substrings in `replacer` have been replaced with their corresponding replacements.
+    """
     for old, new in replacer.items():
         value = value.replace(old, new)
     return value
@@ -44,7 +54,17 @@ def normalized(text, blacklist_patterns=None, stopwords=None, folding=None,
     return delimiter.join(tokens).lower()
 
 
-def remove_pattern(input_txt, pattern):
+def remove_pattern(input_txt:str, pattern:str):
+    """
+    Removes all occurrences of a regular expression pattern from a given input string.
+
+    Args:
+        input_txt (str): the input string from which the pattern is to be removed.
+        pattern (str): the regular expression pattern to be removed from the input string.
+
+    Returns:
+        str: a new string where all occurrences of the regular expression pattern in `input_txt` have been removed.
+    """
     r = re.findall(pattern, input_txt)
     for i in r:
         input_txt = re.sub(i, '', input_txt)  
