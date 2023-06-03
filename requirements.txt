@@ -1,0 +1,16 @@
+gensim==4.3.1
+kneed==0.8.3
+matplotlib-inline==0.1.6
+matplotlib-venn==0.11.9
+matplotlib==3.6.2
+mdurl==0.1.2
+nltk==3.8
+nltk==3.8.1
+numpy==1.23.5
+pandas==1.5.2
+pyLDAvis==3.4.1
+regex==2022.10.31
+requests==2.28.1
+scikit-learn==1.0.2
+scipy==1.9.3
+seaborn==0.12.2
