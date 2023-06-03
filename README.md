@@ -17,10 +17,16 @@ In this thesis, we explore the use of unsupervised learning techniques for topic
 This repository contains the following:
 
 code/: a directory containing the Python scripts used for preprocessing the tweet data, running the clustering and topic modelling algorithms, and evaluating the results.
+
 data/: a directory containing the tweet data used for the experiments.
-docs/: a directory containing the documentation for the code and the experiments.
+
+common/: a directory containing the frequently used functions and modules.
+
+docs/: a directory containing the instruction to re-produce the result.
+
 README.md: this file.
-Usage
+
+## Usage
 To use the code in this repository, follow the instructions in the docs/ directory. The documentation provides a step-by-step guide for running the preprocessing, clustering, and topic modelling scripts, as well as evaluating the results.
 
 # Conclusion
